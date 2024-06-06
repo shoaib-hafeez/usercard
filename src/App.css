@@ -1,38 +1,70 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
+  justify-content: center;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+   gap: 20px;
+  width: 100%;
+
+}
+.user_card{
+  /* height: 670px; */
+  width: 450px;
+  box-shadow: 2px 5px 10px rgb(51, 50, 50);
+  border-radius: 20px;
+ 
+}
+
+.user_image{
+  height: 180px;
+  width: 180px;
+  border-radius: 50%;
+  border-bottom: 1px solid red;
+  margin-top: 70px;
+
+}
+.user_name{
+  color: red;
+}
+.user_info p {
+  font-size: 20px;
+}
+
+.message_btn{
+  padding: 13px 25px ;
+  background-color: orange;
   color: white;
+  border: none;
+  font-size: 18px;
+  margin-inline: 5px;
 }
-
-.App-link {
-  color: #61dafb;
+.following_btn{
+  padding: 13px 25px ;
+  background-color: white;
+  margin-inline: 5px;
+  border: 1px solid orange;
+  font-size: 18px;
+  color: grey;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.footer{
+  background-color: rgb(46, 45, 45);
+  height: 180px;
+  width: 100%;
+  color: white;
+ margin-top: 15px;
+ border-bottom-left-radius: 20px;
+ border-bottom-right-radius: 20px;
+}
+.footerBtn{
+  padding: 2px 12px;
+  text-align: left !important;
+}
+.footerBtn .btns{
+  padding: 7px 10px;
+  font-size: 14px;
+  background-color: transparent;
+  border-color: darkgrey;
+  color: white;
+  margin:8px 8px;
 }
